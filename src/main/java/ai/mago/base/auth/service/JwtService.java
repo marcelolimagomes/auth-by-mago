@@ -32,8 +32,8 @@ public class JwtService {
                 .subject(authentication.getName())
                 .claim("scope", scopes)
                 .build();
-        return encoder.encode(JwtEncoderParameters.from(claims)).getTokenValue();
+        var ret = encoder.encode(JwtEncoderParameters.from(claims)).getTokenValue();
+        System.out.printf("JWT[%s]%n", ret);
+        return ret;
     }
-
-    // https://www.youtube.com/watch?v=kEJ8a1w4a2Q
 }

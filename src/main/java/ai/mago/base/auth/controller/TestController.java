@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @RestController
-@RequestMapping("api")
-public class PrivateController {
+@RequestMapping("api/test")
+public class TestController {
 
-    @GetMapping("private")
+    @GetMapping("all")
     public String getMessage() {
-        return "Hello from private API controller";
+        return "ok";
     }
 
 }

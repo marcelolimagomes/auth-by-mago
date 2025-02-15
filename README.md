@@ -1,4 +1,4 @@
-# Auth by MaGo
+# Auth by MaGo Back-End
 
 ## Introduction
 
